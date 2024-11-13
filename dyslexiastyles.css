@@ -1,0 +1,148 @@
+body {
+    font-family: 'Lora', serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+  }
+  
+  .sidebar {
+    height: 1000px;
+    width: 350px;
+    background-color: #333;
+    color: #ecf0f1;
+    padding: 20px;
+  }
+  
+  .sidebar h1 {
+    text-align: center;
+    font-family: 'Lora', serif;
+  }
+  
+  .lesson-list {
+    margin-top: 50px;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .lesson {
+    margin-top: 30px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #ecf0f1;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    transition:ease-in 0.3s;
+  }
+  .lesson:hover{
+    font-size: 27px;
+    color: #ffffff;
+  }
+  
+  .dropdown-toggle {
+    background: none;
+    border: none;
+    font-size: 29px;
+    color: #ecf0f1;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .chapter-list {
+    list-style-type: none;
+    padding-left: 16px;
+    display: none; /* Initially hidden */
+  }
+  
+  .lesson:hover .chapter-list {
+    display: block;
+  }
+  
+  .sidebar .chapter {
+    font-size: 20px;
+    text-decoration: none;
+    color: #bdc3c7;
+    padding: 5px;
+    display: block;
+    transition: color 0.3s;
+  }
+  
+  .sidebar .chapter:hover {
+    color: #ecf0f1;
+    font-size: 22px;
+  }
+  
+  .content {
+    width: 75%;
+    padding: 20px;
+  }
+  
+  .module-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .module-content h2 {
+    font-family: 'Lora', serif;
+    font-size: 28px;
+  }
+  
+  .question-container {
+    height:max-content;
+    font-size: 25px;
+    margin: 20px 0;
+    line-height: 2;
+  }
+  
+  .speaker-icon {
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .question-mcq {
+    margin: 20px 0;
+  }
+  
+  .question-mcq ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .mcq-option {
+    width: 500px;
+    font-size: 20px;
+    display: block;
+    padding: 40px;
+    margin: 5px 0;
+    margin-bottom: 20px;
+    margin-left: 90px;
+    border: 1px solid #ccc;
+    background-color: #ecf0f1;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+  
+  .mcq-option.correct {
+    background-color: #2ecc71;
+  }
+  
+  .sentence-question input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .mcq-option:hover{
+    box-shadow: 3px 3px 3px #333;
+    width: 510px;
+    margin-left: 85px;
+  }
